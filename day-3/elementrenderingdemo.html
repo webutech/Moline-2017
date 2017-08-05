@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+
+</head>
+<body>
+    <div class="container">
+        <h1>Element Rendering Demo!</h1>
+        <div id="root">
+            <!-- React Component will render here-->
+        </div>
+    </div>
+    
+    <script src="react.js"></script>
+    <script src="react-dom.js"></script>
+    <script src="babel.min.js"></script>
+    <script type="text/babel">
+        /* Create React Component */
+        class Hello extends React.Component{
+            
+            render(){
+                const element=<div>
+                                <h3>Hello Message</h3>
+                                <p>This is paragraph</p>
+                                </div>;
+                return(
+                        element
+                );
+            }
+        }
+        /* Render React Component */
+        ReactDOM.render(<Hello/>,document.getElementById("root"));
+    </script>
+
+</body>
+</html>

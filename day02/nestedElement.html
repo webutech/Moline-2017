@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>JSX Demo</title>
+</head>
+<body>
+    <h1>JSX- Demo - Nested Element</h1><hr>
+    <div id="target"> <!-- here ReactJS code will be rendered --> </div>
+    <script src="react.js"></script> <script src="react-dom.js"></script> <script src="babel.min.js"></script>
+	<script type="text/babel">
+    /* Create React Component */
+    var HelloComponent=React.createClass({
+        render : function(){
+            return (
+                <div>
+                <h1>Main Heading</h1>
+                <h2>Sub Heading</h2>
+                <p>this is the paragraph</p>
+                </div>
+                );
+        }
+    });
+    /* Render an instance of HelloComponent into Document body */
+    ReactDOM.render(<HelloComponent/>,document.getElementById('target'));
+    </script>
+</body>
+</html>
+
