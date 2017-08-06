@@ -1,0 +1,75 @@
+import React from 'react';
+import ReactDOM from 'react-dom';
+class ContactContainerComponent extends React.Component{
+    render(){
+        return(
+            <div>
+                <div>
+                    <div id="logo">YASH Contact Management</div>
+                    <div id="navigation">
+                        <a href="#">HOME</a> |
+                        <a href="#">ABOUT</a> |
+                        <a href="#">SERVICE</a> |
+                        <a href="#">CONTACT US</a>
+                    </div>
+                    <div id="searchContact">
+                        <form action="">
+                            <table>
+                            <tr>
+                                <td><input type="text"/></td>
+                                <td><button>Search</button></td>
+                            </tr>
+                            </table>
+                        </form>
+                    </div>
+                               
+                   </div>
+
+                   <div>
+                       <table>
+                           <tr>
+                               <td>sr.No</td>
+                               <td>Name</td>
+                               <td>Contact</td>
+                               <td>Email</td>
+                               <td>Category</td>
+                               <td>Operation</td>
+                           </tr>
+                           <tr>
+                               <td>1</td>
+                               <td>Pankaj Sharma</td>
+                               <td>3234233223</td>
+                               <td>pankaj@yash.com</td>
+                               <td>Friend</td>
+                               <td>
+                                   <a href="#">Edit</a> |
+                                   <a href="#">Delete</a>
+                               </td>
+                           </tr>
+                           <tr>
+                               <td></td>
+                               <td></td>
+                               <td></td>
+                               <td></td>
+                               <td></td>
+                               <td></td>
+                           </tr>
+                           <tr>
+                               <td></td>
+                               <td></td>
+                               <td></td>
+                               <td></td>
+                               <td></td>
+                               <td></td>
+                           </tr>
+                       </table>
+                   </div>
+                   </div>
+
+                
+                 
+        );
+    }
+}
+
+ReactDOM.render(<ContactContainerComponent/>,document.getElementById('root'));
